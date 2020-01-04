@@ -7,6 +7,10 @@ body {
     margin: 20px auto;
 }
 
+.css-1 {
+    background: green;
+}
+
 .css-2 {
     background: #c0c0c0;
 }
