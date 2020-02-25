@@ -1,0 +1,36 @@
+html, body {
+    font-family: serif;
+}
+body {
+    margin: 20px;
+}
+.wrapper {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+button {
+    border-radius: 10px;
+    background-color: rgb(27, 179, 27);
+    border-style: none;
+    outline: none;
+}
+
+button:hover {
+    background-color: greenyellow;
+    cursor: pointer;
+}
+
+input[type='button'] {
+    border-radius: 10px;
+    background-color: rgb(27, 179, 27);
+    border-style: none;
+    outline: none;
+}
+
+input[type='button']:hover {
+    background-color: greenyellow;
+    cursor: pointer;
+}

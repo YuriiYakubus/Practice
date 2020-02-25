@@ -1,0 +1,13 @@
+html, body {
+    font-family: serif;
+}
+body {
+    margin: 20px;
+}
+
+div {
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 10px;
+}
