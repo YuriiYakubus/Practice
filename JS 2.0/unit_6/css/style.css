@@ -1,0 +1,28 @@
+body {
+    font-family: sans-serif;
+}
+button {
+    margin-bottom: 10px;
+}
+.output-task-10,
+.output-task-9,
+.output-task-1,
+.output-task-2,
+.output-task-3,
+.output-task-4,
+.output-task-5,
+.output-task-6,
+.output-task-7,
+.output-task-8,
+.output-task-11,
+.output-task-12,
+.output-task-13,
+.output-task-14,
+.output-task-15,
+.output-task-16,
+.output-task-17,
+.output-task-18,
+.output-task-19,
+.output-task-20 {
+    font-family: monospace;
+}
