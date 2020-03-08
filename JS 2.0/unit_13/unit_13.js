@@ -405,7 +405,7 @@ function f17() {
 
     for (let key in a17) {
         if (a17[key]['age'] > 30) {
-            result += a17[key]['age'] + ' ';
+            result += a17[key]['name'] + ' ';
         }
     }
 
