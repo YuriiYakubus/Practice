@@ -107,38 +107,35 @@ document.querySelector('.b-6').addEventListener('click', f6);
 // Task 7
 //При нажатии .b-7 выполняете функцию f7. Функция должна переиндексировать массив a7. Что имеется ввиду. Сейчас у нас обычный массив, который содержит вложенные объекты. Вам необходимо сделать из a7 объект, где ключи - значения id из вложенных массивов, а значения - имя (т.е { 23 : Ivan, 45 : Petr}
 
-// let a7 = [{ id: 23, name: 'Ivan' }, { id: 45, name: 'Petr' }];
+let a7 = [{ id: 23, name: 'Ivan' }, { id: 45, name: 'Petr' }];
 
-// function f7() {
-//     for (let i = 0; i < a7.length; i++) {
-//         for (let key in a7[i]) {
-//             key = a7[i][key];
-//         }
-//     }
+function f7() {
+    let arr7 = {};
+    for (let i = 0; i < a7.length; i++) {
+        arr7[a7[i]['id']] = a7[i]['name'];
+    }
+    a7 = arr7;
 
-//     console.log(a7);
-// }
+    console.log(a7);
+}
 
-// document.querySelector('.b-7').addEventListener('click', f7);
+document.querySelector('.b-7').addEventListener('click', f7);
 
 
 // Task 8
 //При нажатии .b-8 выполняете функцию f8. Функция должна переиндексировать массив a8. Что имеется ввиду. Сейчас у нас обычный массив, который содержит вложенные объекты. Вам необходимо сделать из a8 массив, который будет содержать только числовые id. Т.е. [ 23, 45].
 
-// let a8 = [{ id: 23, name: 'Ivan' }, { id: 45, name: 'Petr' }];
+let a8 = [{ id: 23, name: 'Ivan' }, { id: 45, name: 'Petr' }];
 
-// function f8() {
-//     for (let key in a8) {
-//         if (typeof a8.key === 'number') {
-//             a8.push(a8.key);
-//         }
+function f8() {
+    for (let i = 0; i < a8.length; i++) {
+        a8[i] = a8[i]['id'];
+    }
 
-//     }
+    console.log(a8);
+}
 
-//     console.log(a8);
-// }
-
-// document.querySelector('.b-8').addEventListener('click', f8);
+document.querySelector('.b-8').addEventListener('click', f8);
 
 // Task 9
 //При нажатии .b-9 выполняете функцию f9. Функция должна выводить в out-9 самый большой индекс вложенных массивов в массив a9. В данном случае это 4.
@@ -168,7 +165,12 @@ document.querySelector('.b-9').addEventListener('click', f9);
 let a10 = [4, 6, 9, 'Hello'];
 
 function f10() {
+    let arr10 = {};
 
+    for (let i = 0; i < a10.length; i++) {
+        arr10[a10[i]] = a10[i];
+    }
+    a10 = arr10;
 
     return a10;
 }
@@ -188,7 +190,15 @@ let a11 = {
 }
 
 function f11() {
+    let out = '';
 
+    for (let key in a11) {
+        if (a11[key] > 10) {
+            out += a11[key] + ' ';
+        }
+    }
+
+    document.querySelector('.out-11').textContent = out;
 }
 
 document.querySelector('.b-11').addEventListener('click', f11);
@@ -199,7 +209,13 @@ document.querySelector('.b-11').addEventListener('click', f11);
 let a12 = [4, 5, 6, 7];
 
 function f12() {
+    let out = '';
 
+    for (let key of a12) {
+        out += key + ' ';
+    }
+
+    document.querySelector('.out-12').textContent = out;
 }
 
 document.querySelector('.b-12').addEventListener('click', f12);
@@ -211,7 +227,13 @@ document.querySelector('.b-12').addEventListener('click', f12);
 let a13 = 'testone';
 
 function f13() {
+    let out = '';
 
+    for (let key of a13) {
+        out += key + ' ';
+    }
+
+    document.querySelector('.out-13').textContent = out;
 }
 
 document.querySelector('.b-13').addEventListener('click', f13);
@@ -224,7 +246,13 @@ document.querySelector('.b-13').addEventListener('click', f13);
 let a14 = new Set([4, 5, 6]);
 
 function f14() {
+    let out = '';
 
+    for (let key of a14) {
+        out += key + ' ';
+    }
+
+    document.querySelector('.out-14').textContent = out;
 }
 
 document.querySelector('.b-14').addEventListener('click', f14);
@@ -235,7 +263,11 @@ document.querySelector('.b-14').addEventListener('click', f14);
 
 
 function f15() {
+    let all = document.querySelectorAll('.out-15');
 
+    for (let key of all) {
+        key.textContent = 15;
+    }
 }
 
 document.querySelector('.b-15').addEventListener('click', f15);
