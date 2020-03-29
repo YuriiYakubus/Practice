@@ -1,6 +1,6 @@
 class OneE extends One {
-    constructor(t1, t2, t3) {
-        super(t1, t2);
-        this.t3 = t3;
+    constructor(item_1, item_2, item_3) {
+        super(item_1, item_2);
+        this.item_3 = item_3;
     }
 }
