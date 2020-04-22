@@ -1,0 +1,18 @@
+.cssClass {
+    text-decoration: none;
+    background: black;
+    color: white;
+    width: 90px;
+    margin: 0 auto;
+}
+.text-center {
+    text-align: center;
+}
+
+.blod {
+    font-weight: bold;
+}
+
+.text-red {
+    color: red;
+}
