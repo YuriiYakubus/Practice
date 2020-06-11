@@ -1,0 +1,80 @@
+.tic-tac-toe {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  border: 2px solid black;
+  margin: 50px auto;
+}
+
+.ttt-grid {
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+  float: left;
+  box-sizing: border-box;
+  text-align: center;
+  font-size: 2.5rem;
+  line-height: 100px;
+}
+
+.btns-wrapper {
+  width: 20rem;
+  margin: auto;
+}
+
+.x-btn {
+  margin-right: 1rem;
+  padding: 1rem 0.5rem;
+  font-size: 3rem;
+  border-radius: 0.5rem;
+  outline: none;
+  border: none;
+  background: white;
+  cursor: pointer;
+  color: #24a0ed;
+}
+
+.o-btn {
+  margin-left: 1rem;
+  padding: 1rem 0.5rem;
+  font-size: 3rem;
+  border-radius: 0.5rem;
+  outline: none;
+  border: none;
+  background: white;
+  cursor: pointer;
+  color: #24a0ed;
+}
+
+.reset-btn {
+  border: none;
+  outline: none;
+  padding: 1rem 3rem;
+  background: coral;
+  border-radius: 1rem;
+  font-size: 2rem;
+  cursor: pointer;
+  margin: auto;
+  color: white;
+}
+
+.winner {
+  text-align: center;
+  font-size: 4rem;
+  color: rgb(50, 173, 50);
+}
+
+.x-score,
+.o-score {
+  position: absolute;
+  font-size: 3rem;
+  top: 16%;
+}
+
+.x-score {
+  left: -80%;
+}
+
+.o-score {
+  right: -80%;
+}
